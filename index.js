@@ -5,6 +5,8 @@ const fetch = require("cross-fetch");
 
 const versionRegex = /^(v)?([0-9]+\.[0-9]+\.[0-9]+)+$/;
 
+process.env.GITHUB_PATH = '.gh-path.env'
+
 function mapPlatform(platform) {
   switch (platform) {
     case "win32":
